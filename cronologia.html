@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronologia</title>
+</head>
+<body>
+    <main>
+        <div class="boton">
+            <button onclick="buscar()"><h2>siguiente</h2></button>
+        </div>
+        <div class="informacion">
+            <img id="marvel" src="imagenes_del_portafolio/capitana_marvel.jpg" alt="capitana_marvel">
+            <div class="texto">
+                <h2 id="name">Pelicula Marvel</h2>
+                <ul>
+                    <li>
+                        <p id="name"><b>Pelicula:</b>Capitana Marvel</p>
+                    </li>
+                    <li>
+                        <p id="releaseyear"><b>Año de estreno:</b>8 de Marzo de 2019</p>
+                    </li>
+                    <li>
+                        <p id="des"><b>Descripción:</b>Tiene poder de volar y capas de controlar energía cosmica</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <style>
+        .informacion img {
+            margin: 70px;
+            width: 300px;
+            height: 300px;
+            display: flex;
+        }
+        .informacion{
+            display: flex;
+
+            margin: 30px;
+            margin-left: 80px;
+        }
+        .texto{
+            margin: 20px;
+            padding-top: 70px;
+        }
+        .texto h2 {
+            padding-left: 200px;
+        }
+        .texto ul > li {
+            padding-top: 30px;
+        }
+        .boton button {
+            width:150px ;
+            height: 40px;
+            border: 0px;
+            margin-top: 70px;
+            margin-left:620px;
+            border-radius: 10px;
+            background-color: #94bdf3;
+        }
+    </style>
+    <script type="text/javascript" src="marvel.js"></script>
+    <script>
+        buscar()
+    </script>
+</body>
+</html>
